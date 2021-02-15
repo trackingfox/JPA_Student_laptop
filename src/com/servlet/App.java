@@ -51,8 +51,8 @@ public class App {
 //			custlist1.forEach(x -> em.persist(x));
 //			custlist1.forEach(x -> em.merge(x));
 
-		em.merge(laptop);
-		em.merge(s);
+		em.persist(laptop);
+		em.persist(s);
 		em.getTransaction().commit();
 
 		em.close();
